@@ -1,0 +1,116 @@
+/*
+      Shetty, Durgashree
+      Acc No : jadrn061
+      Project #3
+      CS545 Fall 2017
+
+*/
+
+body
+ {
+   background-color:#FFF;
+   font-family : serif,sans-serif,fantasy;
+   margin: 0; 
+   padding: 0;
+   color:#8A0808;
+ }
+
+#welcome_banner
+{
+	min-height: 1px;
+	font-size: 40px;
+	background-color:#8A0808;
+	margin: 0; 
+	padding: 0;
+}
+
+#welcome_banner p
+{ 
+   color:#DBA901;
+   background-color:#000000;
+   font-family : serif,sans-serif;
+   margin: 0; 
+   padding: 0;
+   text-align:center;
+}
+
+#welcome_banner img
+{
+	width : 100px ;
+	height : auto ;
+}
+
+h1 {
+    text-align: center;
+    color:#8A0808;
+    }
+    
+h2 {
+    text-align: center;
+    color:#DBA901;
+    }
+    
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid #DBA901;
+    font-family : serif,sans-serif,fantasy;
+    color:#8A0808;
+    }
+    
+td {
+    padding: 5px;
+    }
+    
+p{
+        text-align: center ;
+}    
+    
+tr:nth-child(even) {
+    border: 1px solid #DBA901;
+    background-color:#000000;
+    color:#DBA901;
+    }
+    
+tr:nth-child(odd) {
+    border: 1px solid #DBA901;
+    background-color:#8A0808;
+    color:#DBA901;
+    }
+    
+ a {
+   color: #DBA901;
+   float:left;
+   font-size:30%;
+}
+
+input[type=reset]{
+	color: #DBA901;
+    background-color: #8A0808;
+	font-size:100%;
+	border: 2px solid #DBA901;
+	margin: 8px 10px;
+}
+
+input[type=submit]{
+	color: #DBA901;
+    background-color: #8A0808;
+	font-size:100%;
+	border: 2px solid #DBA901;
+	
+}
+
+input[type=password]:focus	{
+    border:  2px solid #B18904;   
+    background-color: #F7F2E0;  
+    }
+
+.buttons {
+    text-align: center; 
+    text-decoration: none;
+    font-weight: bold; 
+    
+    }
+	
+	
