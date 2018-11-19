@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <!--
+      Shetty, Durgashree
+      Acc No : jadrn061
+      Project #3
+      CS545 Fall 2017  -->
+	  
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=iso-8859-1" />
+    <title>SDSU Marthon Form</title>
+	<link rel=stylesheet href="formcssfile.css">
+
+    <script src="/jquery/jquery.js"></script> 
+    <script src="form.js"></script>
+</head>
+
+
+<body>
+
+<div id="welcome_banner">
+	<p>
+       <a href="http://jadran.sdsu.edu/~jadrn061/proj3/index.html">Home</a> 
+	   <img src="images/sdsulogo.png" alt="sdsu logo"/> <span class = "textSize">SDSU Marathon form</span> <img src="images/sdsulogo.png" alt="sdsu logo" />
+	</p>
+	
+	
+ </div>
+ 
+    <div>
+      
+	<fieldset>
+	<legend>Personal Information</legend>
+        <form  
+        name="signupForm" enctype="multipart/form-data"  method="post"  action="process_request.php">
+	
+		  
+		  <div class="imgbox">
+		  <p>
+		  <img src="images/imgicon.png" alt="img icon"/> <br>
+			 <input type="file" id ="user_pic" name="user_pic" accept="image/*" />
+		  <p>
+		  </div>
+		
+		        
+		<table>		
+				
+                <tr>		
+                    <td><label for="fname"><sup>*</sup>First Name:</label></td>
+                    <td><input type="text" name="fname" id="fname" size="20"  /></td>
+					<td><label for="mname">Middle Name:</label></td>
+                    <td><input type="text" name="mname" id="mname" size="20"  /></td>
+                    <td><label for="lname"><sup>*</sup>Last Name:</label></td>
+                    <td><input type="text" name="lname" id="lname" size="20"  /></td>                    
+                </tr>
+				
+                <tr>		
+                    <td><label for="address1"><sup>*</sup>Address Line 1:</label></td>
+                    <td colspan="5"><input type="text" name="address1" id="address1" size="50" /></td>
+                </tr> 
+				
+                <tr>		
+                    <td><label for="address2">Address Line 2:</label></td>
+                    <td colspan="5"><input type="text" name="address2" id="address2" size="50" /></td>
+                </tr>  
+                
+                <tr>		
+                    <td><label for="city"><sup>*</sup>City:</label></td>
+                    <td><input type="text" name="city" id="city" size="15" /></td>
+                    <td><label for="state"><sup>*</sup>State:</label></td>
+                    <td><input type="text" name="state" id="state" size="4" maxlength="2"/></td>
+                    <td><label for="zip"><sup>*</sup>Zipcode:</label></td>
+                    <td><input type="text" name="zip" id="zip" size="10" maxlength="5"/></td>                                        
+                </tr>     
+
+                <tr> 
+				<td><label for="phone"><sup>*</sup>Primary Phone:</label></td>
+                <td colspan="5">(<input type="text" name="area_phone" id="phone" size="3" maxlength="3" />)  &nbsp;&nbsp;
+                 <input type="text" name="prefix_phone" size="3" maxlength="3" /> &nbsp;-&nbsp;
+                <input type="text" name="phone" size="4" maxlength="4" /> </td>
+				</tr>
+				
+				<tr>
+                <td><label for="email"><sup>*</sup>EMail:</label>
+                <td colspan="5"><input type="text" name="email" id="email" size="15" /></td>
+                </tr>
+				
+				<tr>
+                <td><label for="gender"><sup>*</sup>Gender:</label>
+                <td><input type="radio" name="gender" value="male" />Male</td>
+				<td colspan="2"><input type="radio" name="gender" value="female" />Female</td>
+				<td colspan="2"><input type="radio" name="gender" value="other" />Other</td>
+                </tr>
+
+                <tr>
+				<td><label for="dob"><sup>*</sup>Date of Birth:</label></td>
+				<td colspan="5"><input type="text" id="monthd" size="2" maxlength="2" name="month" placeholder="MM"/>
+                <input type="text" id="dated" size="2" maxlength="2" name="dated" placeholder="DD"/>
+                <input type="text" id="yeard" size="4"  maxlength="4" name="year" placeholder="YYYY" /> </td>
+                </tr>
+
+                <tr>
+				<td><label for="medical">Medical Condition:</label></td>
+				<td colspan="5"><textarea cols="40" rows="2" id="text_area"> </textarea> </td>
+                </tr>
+
+                <tr>
+                <td><label for="exlevel"><sup>*</sup>Experience level:</label>
+                <td><input type="radio" name="exlevel" value="expert" />Expert</td>
+				<td colspan="2"><input type="radio" name="exlevel" value="experienced"/>Experienced</td>
+				<td colspan="2"><input type="radio" name="exlevel" value="novice" />Novice</td>
+                </tr>
+
+                <tr>
+                <td><label for="cat"><sup>*</sup>Category:</label>
+                <td><input type="radio" name="cat" value="teen" />Teen</td>
+				<td colspan="2"><input type="radio" name="cat" value="adult"/>Adult</td>
+				<td colspan="2"><input type="radio" name="cat" value="senior" />Senior</td>
+                </tr>				
+				
+            </table>
+			
+			<!-- <h3 id="status">&nbsp;</h3> -->
+            <div id="message_line">&nbsp;</div>
+	    
+	    <div id='loadingmessage'>
+	    <p>
+               <img src="images/loading_image.gif" alt="loading Image"/>
+	       </p>
+            </div>
+            
+            <div class="buttons">
+                <input type="reset" />
+                <input type="submit" value="Submit" />
+            </div>        
+        </form>   
+	</fieldset>  
+	 
+    </div>
+</body>
+
+</html>
